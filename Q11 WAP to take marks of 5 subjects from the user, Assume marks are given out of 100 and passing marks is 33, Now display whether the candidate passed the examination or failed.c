@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,d,e,x;
+    int a,b,c,d,e,x = 33;
 	
 	printf("Hello Aman,\n Enter Your Marks\n");
 	scanf("%d",&a);
@@ -10,8 +10,15 @@ int main()
 	scanf("%d",&d);
 	scanf("%d",&e);
 	
-	x = 33;
+	if( a >= x && b >= x && c >= x && d >= x && e >= x)
+	{
+		printf("Good, You are pass!");
+	}
+	else
+	{
+		printf("oh! You are Fail!!");
+	}
 	
-	if( a >= x)
+	
 	return 0;
 }
